@@ -6,8 +6,9 @@
 create and retrieve posts, manage likes and comments, and perform basic 
 social media actions.
 
-## Requirements:
-- User Registration and Authentication:
+# Requirements:
+
+## User Registration and Authentication:
 - Users should be able to register with their email and password to create an account.
 - Users should be able to login with their credentials and receive a token for authentication.
 - Users should be able to logout and invalidate their token.
