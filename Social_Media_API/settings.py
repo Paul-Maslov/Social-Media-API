@@ -96,7 +96,7 @@ REST_FRAMEWORK = {
 
     ],
     "DEFAULT_PERMISSION_CLASSES": [
-        "cinema.permissions.IsAdminOrIfAuthenticatedReadOnly",
+        "post_service.permissions.IsAdminOrIfAuthenticatedReadOnly",
     ]
 }
 
