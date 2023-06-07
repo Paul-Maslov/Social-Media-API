@@ -7,7 +7,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(null=True, blank=True)
     created_time = models.DateTimeField(auto_now_add=True)
-    post_image = models.ImageField(upload_to="media/posts_image/", blank=True)
+    post_image = models.ImageField(upload_to="media/post_image/", blank=True)
     owner = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True,
         related_name="post"
