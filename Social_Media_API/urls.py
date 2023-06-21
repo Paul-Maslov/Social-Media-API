@@ -21,6 +21,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path(
+        "api/post_service/",
+        include(
+            "post_service.urls",
+            namespace="post_service"
+        )),
     path("api/user/", include("user.urls", namespace="user")),
     path("__debug__/", include("debug_toolbar.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

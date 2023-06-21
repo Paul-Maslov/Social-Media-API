@@ -51,7 +51,10 @@ class Migration(migrations.Migration):
                 ("created_time", models.DateTimeField(auto_now_add=True)),
                 (
                     "post_image",
-                    models.ImageField(blank=True, upload_to="media/posts_image/"),
+                    models.ImageField(
+                        blank=True,
+                        upload_to="media/posts_image/"
+                    ),
                 ),
             ],
             options={

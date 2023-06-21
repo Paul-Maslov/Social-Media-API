@@ -24,10 +24,16 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("name", models.CharField(blank=True, max_length=255, null=True)),
+                (
+                    "name",
+                    models.CharField(blank=True, max_length=255, null=True)
+                ),
                 ("bio", models.TextField(blank=True, max_length=500)),
                 ("birth_date", models.DateField(blank=True, null=True)),
-                ("location", models.CharField(blank=True, max_length=100, null=True)),
+                (
+                    "location",
+                    models.CharField(blank=True, max_length=100, null=True)
+                ),
                 (
                     "picture",
                     models.ImageField(blank=True, upload_to="media/profile_pictures/"),
